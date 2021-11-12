@@ -2,7 +2,9 @@
 /Encrypt.class
 /FindingWordFromFile.class
 /PasswordFile.class
-/TextWriter.class
-/TripplrDes.class
-/UserNameFile.class
 /Split.class
+/TextWriter.class
+/UserNameFile.class
+/GUI.class
+/CardLayoutDemo.class
+/SpringLayoutDemo.class
