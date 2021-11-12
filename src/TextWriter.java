@@ -5,7 +5,8 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class TextWriter {
-    public static void main( String[] args ) {
+    void runner(String[] ans) {
+
         String dataUser="";
         String dataPass="";
         String dataAcc="";
@@ -17,12 +18,20 @@ public class TextWriter {
             Scanner userScn = new Scanner(System.in);
             Scanner passwordScn = new Scanner(System.in);
             while(i==1){
+              dataUser=ans[0];
                 System.out.println("Account name");
-                dataAcc = passwordScn.next();
-                System.out.println("Enter the username");
-                dataUser = userScn.next();
-                System.out.println("Enter the password");
-                String user = passwordScn.next().trim();
+                dataAcc = ans[2];
+               System.out.println("Enter the username");
+
+               System.out.println(dataUser);
+
+
+               //dataUser = userScn.next();
+              System.out.println("Enter the password");
+              String user=ans[1];
+               //String user = passwordScn.next().trim();
+
+                System.out.println(user);
                 char[] sh=user.toCharArray();
                 for(int i1=0;i1<sh.length;i1++)
                 {sh[i1]= sh[i1]+=5;}
