@@ -24,6 +24,10 @@ GUI(){
 
 
             JFrame f = new JFrame();
+            f.setTitle("Add Password");
+            f.setVisible(true);
+            f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            f.setResizable(false);
 
 
             JLabel login = new JLabel();
