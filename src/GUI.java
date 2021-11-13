@@ -12,9 +12,11 @@ public class GUI extends JFrame implements ActionListener {
     static String username;
     static String password;
 
+GUI(){
 
 
-    public static void main(String[] args) {
+
+  //  public static void main(String[] args) {
 
     TextWriter txt = new TextWriter();
 
@@ -84,8 +86,7 @@ public class GUI extends JFrame implements ActionListener {
             f.add(acc);
 
 
-
-        }
+    }
 
     @Override
     public void actionPerformed(ActionEvent e) {
