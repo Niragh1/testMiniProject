@@ -3,7 +3,7 @@ import java.io.IOException;  // Import the IOException class to handle errorspub
 
 
     public class PasswordFile {
-        public static void main(String[] args) {
+        PasswordFile() {
             try {
                 File myObj = new File("password.txt");
                 if (myObj.createNewFile()) {

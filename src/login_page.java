@@ -88,10 +88,12 @@ class login_page extends JFrame implements ActionListener {
 
             if (userText.equalsIgnoreCase(user) && pwdText.equalsIgnoreCase(password)) {
                 JOptionPane.showMessageDialog(this, "Login Successful");
-                GUI a = new GUI();
-               // setVisible(false);
+                menu_file menu = new menu_file();
                 dispose();
-                a.setVisible(true);
+                menu.setVisible(true);
+
+
+
             } else {
                 JOptionPane.showMessageDialog(this, "Invalid Username or Password");
             }}
@@ -124,6 +126,9 @@ class login_page extends JFrame implements ActionListener {
 class Login {
     public static void main(String[] a) {
         login_page frame = new login_page();
+        UserNameFile file =new UserNameFile();
+        PasswordFile p = new PasswordFile();
+        file.filemaker();
         frame.setTitle("Login Form");
         frame.setVisible(true);
         frame.setBounds(10, 10, 370, 600);
